@@ -8,3 +8,4 @@ node_modules/
 *.ipr
 *.iws
 .idea/
+package-lock.json

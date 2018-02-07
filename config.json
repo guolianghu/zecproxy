@@ -1,21 +1,21 @@
 {
-  "wallet": "t1YAdYcnKR2ozADWPUvmgnDgf86gfsxQEEE",
+  "wallet": "t1VoWKswP7sDVpvCx95vecJPxKRTy2RrXLe",
   "password" : "x",
   "port": 8000,
   "proxy_name" : "zecproxy",
   "enable_worker_id": true, 
-  "pool" : { "host" : "zec-eu1.nanopool.org"  , "port" : 6666 },
+  "pool" : { "host" : "cn1-zcash.flypool.org"  , "port" : 3333 },
   "pool_failover_enabled": true,
-  "pool_failover" : [ { "host" : "zec-eu2.nanopool.org"  , "port" : 6666 },
-                      { "host" : "eu1-zcash.flypool.org"  , "port" : 3443,  "ssl" : true},
-                      { "host" : "eu1-zcash.flypool.org"  , "port" : 3333,  "ssl" : false},
-                      { "host" : "us1-zcash.flypool.org"  , "port" : 3333 , "ssl" : false },
-                      { "host" : "cn1-zcash.flypool.org"  , "port" : 3333 , "ssl" : false },
-                      { "host" : "asia1-zcash.flypool.org", "port" : 3333 , "ssl" : false }],
+  "pool_failover" : [
+    { "host" : "cn1-zcash.flypool.org"  , "port" : 3333 },
+    { "host" : "cn1-zcash.flypool.org"  , "port" : 13333},
+    { "host" : "asia1-zcash.flypool.org"  , "port" : 3333 },
+    { "host" : "asia1-zcash.flypool.org"  , "port" : 13333}
+  ],
   "restart_delay": 10,
   "on_rejected_share": {
-                      "strategy" : "restart",
-                      "threshold" : 5
-                    },
-  "debug" : false
+    "strategy" : "restart",
+    "threshold" : 5
+  },
+  "debug" : true
 }
